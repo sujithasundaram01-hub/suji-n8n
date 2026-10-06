@@ -1,0 +1,66 @@
+{
+  "name": "My workflow",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "2cde8748-abdf-4c0e-8490-4aa6ce623e95",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "sendTo": "subalakshmiboopathi@gmail.com",
+        "subject": "cfgvghj",
+        "message": "crtyhnmkjhg",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.2,
+      "position": [
+        224,
+        0
+      ],
+      "id": "a74d120e-935a-4883-8fcb-aa20f567117b",
+      "name": "Send a message",
+      "webhookId": "e4c5efe5-c1f6-4ba1-b502-d486a319d4b6",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "vvkJhjzPm8afMA3F",
+          "name": "Gmail account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Send a message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "c14e7c93-bbc0-41cb-aae7-6ede37e75123",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "8cdaa76c4fb7a4f904f10ab908d6e9cd7340e25a55e1fd2f7180c2a5f0baca4f"
+  },
+  "nodeGroups": [],
+  "id": "NiivKLZtKzmexiGu",
+  "tags": []
+}
